@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="97ed67d5-c8d2-47e7-a79d-1b1b81b8304e" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1zxqxPvjzSRtduCbgkbbaQKrThu" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="97ed67d5-c8d2-47e7-a79d-1b1b81b8304e" name="Default Changelist" comment="" />
+      <created>1635100332797</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1635100332797</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="707" y="233" key="#com.intellij.ide.util.MemberChooser" timestamp="1635100709025">
+      <screen x="38" y="23" width="1642" height="1027" />
+    </state>
+    <state x="707" y="233" key="#com.intellij.ide.util.MemberChooser/38.23.1642.1027@38.23.1642.1027" timestamp="1635100709025" />
+    <state x="573" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1635100441653">
+      <screen x="37" y="23" width="1643" height="1027" />
+    </state>
+    <state x="573" y="349" key="com.intellij.ide.util.TipDialog/37.23.1643.1027@37.23.1643.1027" timestamp="1635100441653" />
+  </component>
+</project>

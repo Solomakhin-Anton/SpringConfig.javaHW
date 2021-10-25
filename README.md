@@ -1,35 +1,32 @@
-# DependencyInjection2
+# DependencyInjection3
 
-* Внедряем зависимости через сеттер:
-    1. Создадим сеттер `setMusic(Music music)`;
-    2. В applicationContext.xml уберем тег `constructor-arg`, а вместо него будем использовать тег `property`, в котором укажем `name` и `ref`;
-    3. До этого в applicationContext.xml в теге `constructor-arg` в `ref` мы внедряли ссылку на бин, тут попробуем внедрить числа и сттроки (при ссылке остается `ref="beanID"`);
-    4. Также создадим отдельный файл .properties и будем брать значения оттуда;
-    
-## Создаем сеттер
+##  Внедряем List<>:
 
-1. При создании сеттера меням в applicationContext.xml тег `constructor-arg` на `property`, при этом в этом теге `name` - это имя сеттера, то есть сеттер без `set` + первая буква toLowerCase (setMusic превращается в music);
-2. При ошибке компиляции от IDEA, указывающей на класс в бине, необходимо добавить нужный конструктор в классе (например, при ` <bean id="musicPlayer"
-                                                                                                                                             class="ru.solomakhin.spring.MusicPlayer">
-                                                                                                                                           <property name="music" ref="musicBean"/>
-                                                                                                                                       </bean>` ничего не передается и необходимо создать конструктор `public MusicPlayer(){}`);
-    
-    
-#### Работа спринга при внедрении сеттера:
+1. В applicationProperties.xml создаем нужное количество бинов (в нашем случае - 3):
 
-При вызове `musicPlayer.playMusic();`:
-1. Он создает бин (объект) класса MusicPlayer (`MusicPlayer musicPlayer1 = new MusicPlayer()`);
-2. После вызывает у этого объекта сеттер, соответствующий названию нашей зависимости (`name` в applicationContext.xml) (`musicPlayer1.setMusic(music)`);
-3. В сеттер в качестве объекта (music) передает тот бин, который был создан ранее (`musicBean`);
-       
-## Внедряем простые значения  
+     `<bean id="musicBean1"
+           class="ru.alishev.springcourse.ClassicalMusic">
+     </bean> `
+     
+     `<bean id="musicBean2"
+           class="ru.alishev.springcourse.RockMusic">
+     </bean>`
+ 
+     `<bean id="musicBean3"
+           class="ru.alishev.springcourse.RapMusic">
+     </bean>`
+     
+2. В бине `musicPlayer` добавляем property с тегом `<list>`:
 
-1. Создаем `String` и `int` с геттерами с сеттерами;
-2. В applicationContext.xml бину `musicPlayer` назначим зависимости с простыми значениями в теге `property`;
+        <property name="musicList">
+            <list>
+                <ref bean="musicBean1"/>
+                <ref bean="musicBean2"/>
+                <ref bean="musicBean3"/>
+            </list>
+        </property>
 
-## Внедряем из  отдельного файла:
-
-1. Создаем файл с разрешением  .properties;
-2. Вводим туда значени;
-3. Импортируем файл musicPlayer.properties в applicationContext.xml (прописываем `    <context:property-placeholder location="classpath:musicPlayer.properties"/>`);
-4. Меняем в теге `property` у `value` простые значения на `${musicPlayer.name}` и `${musicPlayer.volume}`;
+3. В классе `MusicPlayer` добавляем коллекцию `private List<Music> musicList = new ArrayList<>();`;
+4. Делаем сеттер `setMusicList(List<Music> musicList)`;
+5. Создаем метод `playMusicList()`, в котором выводим на экран все песни по-очереди;
+6. Вызываем метод `playMusicList()`.

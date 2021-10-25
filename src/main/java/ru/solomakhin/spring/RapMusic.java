@@ -1,6 +1,8 @@
 package ru.solomakhin.spring;
 
+import org.springframework.stereotype.Component;
 
+@Component
 public class RapMusic implements Music {
     private RapMusic(){}
 

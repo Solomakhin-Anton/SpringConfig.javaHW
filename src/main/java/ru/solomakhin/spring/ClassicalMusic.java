@@ -1,16 +1,11 @@
 package ru.solomakhin.spring;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class ClassicalMusic implements Music {
     @Override
     public String getSong() {
         return "Classic";
-    }
-
-    public void doMyInit(){
-        System.out.println("Init Classic");
-    }
-
-    public void doMyDestroy(){
-        System.out.println("Destroy Classic");
     }
 }

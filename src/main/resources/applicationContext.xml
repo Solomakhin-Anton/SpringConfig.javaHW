@@ -13,38 +13,19 @@
           class="ru.solomakhin.spring.RockMusic">
     </bean>
 
-    <bean id="musicBean2"
-          class="ru.solomakhin.spring.ClassicalMusic">
-    </bean>
-
-    <bean id="musicBean3"
-          class="ru.solomakhin.spring.RapMusic">
-    </bean>
-
     <bean id="musicPlayer"
           class="ru.solomakhin.spring.MusicPlayer">
         <property name="music" ref="musicBean"/>
-
-<!--        До внедрения из отдельного файла-->
-
-<!--        <property name="name" value="Some name"/>-->
-<!--        <property name="volume" value="50"/>-->
-
-<!--        После внедрения из отдельного файла-->
-
         <property name="name" value="${musicPlayer.name}"/>
         <property name="volume" value="${musicPlayer.volume}"/>
     </bean>
-    
-    <bean id="musicListPlayer"
-          class="ru.solomakhin.spring.MusicPlayer">
-        <property name="musicList">
-            <list>
-                <ref bean = "musicBean"/>
-                <ref bean = "musicBean2"/>
-                <ref bean = "musicBean3"/>
-            </list>
-        </property>
+
+    <bean id="musicPlayer2"
+          class="ru.solomakhin.spring.MusicPlayer"
+            scope="prototype">
+        <property name="music" ref="musicBean"/>
+        <property name="name" value="${musicPlayer.name}"/>
+        <property name="volume" value="${musicPlayer.volume}"/>
     </bean>
 
 </beans>

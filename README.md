@@ -1,32 +1,24 @@
-# DependencyInjection3
+# Scope (область видимости бина)
 
-##  Внедряем List<>:
+1. Singleton (по-умолчанию) 
+    - при создании бина создается только один объект (до вызова`getBean()`).
+    - при всех вызовах `getBean()` возвращается ссылка на один и тот же объект;
+    - используется чаще всего когда у нашего бина нет изменяемых состояний;
+    
+2. Prototype
+    - каждый раз создает новый объект при вызове `getBean()`;
+    - используется чаще всего когда у нашего бина есть изменяемые состояния;
 
-1. В applicationProperties.xml создаем нужное количество бинов (в нашем случае - 3):
+3. Other: 
+    - request;
+    - session;
+    - global-session;
+    
+Other будут в Spring MVC.
 
-     `<bean id="musicBean1"
-           class="ru.alishev.springcourse.ClassicalMusic">
-     </bean> `
-     
-     `<bean id="musicBean2"
-           class="ru.alishev.springcourse.RockMusic">
-     </bean>`
- 
-     `<bean id="musicBean3"
-           class="ru.alishev.springcourse.RapMusic">
-     </bean>`
-     
-2. В бине `musicPlayer` добавляем property с тегом `<list>`:
+### Добавление scope:
 
-        <property name="musicList">
-            <list>
-                <ref bean="musicBean1"/>
-                <ref bean="musicBean2"/>
-                <ref bean="musicBean3"/>
-            </list>
-        </property>
+Scope добавляется в теге `bean` после класса: `<bean id="musicPlayer2"
+                                                         class="ru.solomakhin.spring.MusicPlayer"
+                                                           scope="prototype">`
 
-3. В классе `MusicPlayer` добавляем коллекцию `private List<Music> musicList = new ArrayList<>();`;
-4. Делаем сеттер `setMusicList(List<Music> musicList)`;
-5. Создаем метод `playMusicList()`, в котором выводим на экран все песни по-очереди;
-6. Вызываем метод `playMusicList()`.

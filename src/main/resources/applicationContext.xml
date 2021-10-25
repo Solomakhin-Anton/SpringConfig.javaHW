@@ -7,6 +7,8 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
 
+    <context:property-placeholder location="classpath:musicPlayer.properties"/>
+
     <bean id="musicBean"
           class="ru.solomakhin.spring.RockMusic">
     </bean>
@@ -14,6 +16,16 @@
     <bean id="musicPlayer"
           class="ru.solomakhin.spring.MusicPlayer">
         <property name="music" ref="musicBean"/>
+
+<!--        До внедрения из отдельного файла-->
+
+<!--        <property name="name" value="Some name"/>-->
+<!--        <property name="volume" value="50"/>-->
+
+<!--        После внедрения из отдельного файла-->
+
+        <property name="name" value="${musicPlayer.name}"/>
+        <property name="volume" value="${musicPlayer.volume}"/>
     </bean>
 
 </beans>

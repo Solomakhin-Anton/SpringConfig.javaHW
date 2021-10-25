@@ -9,12 +9,8 @@ public class TestSpring {
         );
 
 //        Music music = context.getBean("musicBean", Music.class);
-//
 //        MusicPlayer musicPlayer = new MusicPlayer(music);
 
-        /*
-        Делаем без создания нового экземпляра  объекта
-         */
         MusicPlayer musicPlayer = context.getBean("musicPlayer", MusicPlayer.class);
 
         musicPlayer.playMusic();

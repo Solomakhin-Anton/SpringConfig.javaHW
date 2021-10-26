@@ -8,7 +8,6 @@ public class TestSpring {
                 "applicationContext.xml"
         );
 
-        // 1-4
         MusicPlayer musicPlayer = context.getBean("musicPlayer", MusicPlayer.class);
 
         musicPlayer.playMusic(); // Playing: Classic

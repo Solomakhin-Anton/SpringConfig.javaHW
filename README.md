@@ -1,25 +1,33 @@
-# Annotations
+# Annotation @Autowired
 
-**Java Аннотации** - это специальный тип комментариев:
-- можно передавать какие-либо инструкции для компилятора и анализаторов исходного кода;
-- можно передавать метаданные, которые могут быть использованы либо вашим Java-приложением, либо другими приложениями или фреймворками;
+- Позволяет не внедрять зависимости вручную.
+- Подбирает подходящие бины по ихтипу (класс или интерфейс).
+- Можно использовать на полях, сеттерах и конструкторах.
+- Внедрит зависимость в приватное поле, даже если нет конструктора или сеттера. Делает она это с помощью рефлексии (Java Reflection API).
 
-## Меняем xml на аннотации
+## Задание
 
-_*используется код из IoC_
+1. Внедрим зависимости  через конструкторы, сеттеры и поля.
+2. Разберем некоторые тонкости аннотации.
+3. Увидим ошибку, когда Spring не находит подходящего бина для внедрения.
+4. Увидим проблему неоднозначности, когда несколько бинов подходят для внедрения.
 
-1. Для создания бина из класса этот класс помечается аннотацией @Component.
-2. В скобках можно указать id (по умолчанию id == название класса с маленькой буквы).
-3. Убираем все с тегом `<bean>`.
-4. Прописываем `<context:component-scan base-package="ru.solomakhin.spring"/>`,где в `base-package` указывается путь до папки, в которой Spring будет искать аннотации.
-5. Меняем создание класса в `TestSpring.java`.
-6. Вызываем `playMusic`.
+## Решение
 
-#### Как работает
+1. Сначала преобразуем класс `MusicPlayer`, чтобы он работал только с одним видом типа музыки, например, `classicalMusic`.
+2. У нас два бина (с аннотацией `@Component`) - `ClassicalMusic` и `Musicplayer`.
+3. Добавляем `@Autowired` у конструктора `MusicPlayer`, чтобы указать, куда внедрять бин `ClassicalMusic`.
+4. Вызовем из контекста бин `musicPlayer`.
+5. Если убрать аннотация `@Component` у `ClassicalMusic`, то  Spring не  увидит подходящий для внедрения бин - выбросится исключение `Exception in thread "main" org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'musicPlayer' defined in file [/Users/simao/Desktop/springProject/target/classes/ru/solomakhin/spring/MusicPlayer.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'ru.solomakhin.spring.ClassicalMusic' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}`.
+6. Вернем `MsicPlayer` к исходному виду - чтобы проверить работу, если подходящих бинов несколько (закомменченный код) - появится ошибка `Caused by: org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type 'ru.solomakhin.spring.Music' available: expected single matching bean but found 3: classicalMusic,rapMusic,rock`.
+7. Внедряем зависимость через сеттер - следующий репозиторий.
 
-1. Spring сканирует все классы.
-2. Находит классы со специальными аннотациями и автоматически создает бины.
 
-###### Примечание
+### Как работает
 
-Если мы задаем бины через анотации они имеют `scope="singeleton"`
+1. Spring сканирует все классы с аннотацией `@Component` и создает  бины для этих классов.
+2. Spring сканирует все созданные бины и проверяет, подходит ли хотябы один бин в качестве зависимости там, где мы указали `@Autowired`.
+3. Если находится один подходящий бин, он внедряется в качестве зависимости.
+4. Если не находится ни одного бина - ошибка.
+5. Если несколько бинов подходят - неоднозначность.
+

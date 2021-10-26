@@ -8,12 +8,4 @@ public class RockMusic implements Music {
     public String getSong() {
         return "Rock";
     }
-
-    public void doMyInit(){
-        System.out.println("Init Rock");
-    }
-
-    public void doMyDestroy(){
-        System.out.println("Destroy Rock");
-    }
 }

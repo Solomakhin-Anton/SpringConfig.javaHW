@@ -1,20 +1,29 @@
 package ru.solomakhin.spring;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
 public class MusicPlayer {
-    private Music music;
+    private ClassicalMusic classicalMusic;
 
-    public MusicPlayer(Music music) {
-        this.music = music;
-    }
-
-    public MusicPlayer(){}
-
-    public void setMusic(Music music) {
-        this.music = music;
+    @Autowired
+    public MusicPlayer(ClassicalMusic classicalMusic) {
+        this.classicalMusic = classicalMusic;
     }
 
     public void playMusic() {
-        System.out.println("Playing: " + music.getSong());
+        System.out.println("Playing: " + classicalMusic.getSong());
     }
 
+//    private Music music;
+//
+//    @Autowired
+//    public MusicPlayer(Music music) {
+//        this.music = music;
+//    }
+//
+//    public void playMusic() {
+//        System.out.println("Playing: " + music.getSong());
+//    }
 }

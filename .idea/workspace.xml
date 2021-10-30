@@ -2,16 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97ed67d5-c8d2-47e7-a79d-1b1b81b8304e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/images/SZ.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/solomakhin/spring/MusicTypes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/solomakhin/spring/ClassicalMusic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/solomakhin/spring/ClassicalMusic.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/solomakhin/spring/Computer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/solomakhin/spring/Computer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/solomakhin/spring/Music.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/solomakhin/spring/Music.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/solomakhin/spring/MusicPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/solomakhin/spring/MusicPlayer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/solomakhin/spring/RapMusic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/solomakhin/spring/RapMusic.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/solomakhin/spring/RockMusic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/solomakhin/spring/RockMusic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/solomakhin/spring/TestSpring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/solomakhin/spring/TestSpring.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/musicPlayer.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/musicPlayer.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,45 +97,51 @@
       <screen x="37" y="23" width="1643" height="1027" />
     </state>
     <state x="925" y="326" key="#com.intellij.fileTypes.FileTypeChooser/37.23.1643.1027@37.23.1643.1027" timestamp="1635177415259" />
-    <state x="704" y="233" key="#com.intellij.ide.util.MemberChooser" timestamp="1635528830849">
-      <screen x="35" y="23" width="1645" height="1027" />
+    <state x="707" y="233" key="#com.intellij.ide.util.MemberChooser" timestamp="1635609208286">
+      <screen x="40" y="23" width="1640" height="1027" />
     </state>
     <state x="704" y="233" key="#com.intellij.ide.util.MemberChooser/35.23.1645.1027@35.23.1645.1027" timestamp="1635528830849" />
     <state x="705" y="233" key="#com.intellij.ide.util.MemberChooser/36.23.1644.1027@36.23.1644.1027" timestamp="1635268704025" />
     <state x="706" y="233" key="#com.intellij.ide.util.MemberChooser/37.23.1643.1027@37.23.1643.1027" timestamp="1635178920596" />
     <state x="707" y="233" key="#com.intellij.ide.util.MemberChooser/38.23.1642.1027@38.23.1642.1027" timestamp="1635100709025" />
-    <state width="1270" height="265" key="GridCell.Tab.0.bottom" timestamp="1635531040172">
-      <screen x="35" y="23" width="1645" height="1027" />
+    <state x="707" y="233" key="#com.intellij.ide.util.MemberChooser/40.23.1640.1027@40.23.1640.1027" timestamp="1635609208286" />
+    <state width="717" height="279" key="GridCell.Tab.0.bottom" timestamp="1635610110558">
+      <screen x="40" y="23" width="1640" height="1027" />
     </state>
-    <state width="1270" height="265" key="GridCell.Tab.0.bottom/35.23.1645.1027@35.23.1645.1027" timestamp="1635531040172" />
+    <state width="1270" height="265" key="GridCell.Tab.0.bottom/35.23.1645.1027@35.23.1645.1027" timestamp="1635546114607" />
     <state width="748" height="265" key="GridCell.Tab.0.bottom/36.23.1644.1027@36.23.1644.1027" timestamp="1635269207066" />
     <state width="748" height="265" key="GridCell.Tab.0.bottom/37.23.1643.1027@37.23.1643.1027" timestamp="1635184295949" />
     <state width="1381" height="267" key="GridCell.Tab.0.bottom/38.23.1642.1027@38.23.1642.1027" timestamp="1635102954962" />
-    <state width="1270" height="265" key="GridCell.Tab.0.center" timestamp="1635531040170">
-      <screen x="35" y="23" width="1645" height="1027" />
+    <state width="717" height="279" key="GridCell.Tab.0.bottom/40.23.1640.1027@40.23.1640.1027" timestamp="1635610110558" />
+    <state width="717" height="279" key="GridCell.Tab.0.center" timestamp="1635610110557">
+      <screen x="40" y="23" width="1640" height="1027" />
     </state>
-    <state width="1270" height="265" key="GridCell.Tab.0.center/35.23.1645.1027@35.23.1645.1027" timestamp="1635531040170" />
+    <state width="1270" height="265" key="GridCell.Tab.0.center/35.23.1645.1027@35.23.1645.1027" timestamp="1635546114604" />
     <state width="748" height="265" key="GridCell.Tab.0.center/36.23.1644.1027@36.23.1644.1027" timestamp="1635269207064" />
     <state width="748" height="265" key="GridCell.Tab.0.center/37.23.1643.1027@37.23.1643.1027" timestamp="1635184295948" />
     <state width="1381" height="267" key="GridCell.Tab.0.center/38.23.1642.1027@38.23.1642.1027" timestamp="1635102954961" />
-    <state width="1270" height="265" key="GridCell.Tab.0.left" timestamp="1635531040170">
-      <screen x="35" y="23" width="1645" height="1027" />
+    <state width="717" height="279" key="GridCell.Tab.0.center/40.23.1640.1027@40.23.1640.1027" timestamp="1635610110557" />
+    <state width="717" height="279" key="GridCell.Tab.0.left" timestamp="1635610110556">
+      <screen x="40" y="23" width="1640" height="1027" />
     </state>
-    <state width="1270" height="265" key="GridCell.Tab.0.left/35.23.1645.1027@35.23.1645.1027" timestamp="1635531040170" />
+    <state width="1270" height="265" key="GridCell.Tab.0.left/35.23.1645.1027@35.23.1645.1027" timestamp="1635546114603" />
     <state width="748" height="265" key="GridCell.Tab.0.left/36.23.1644.1027@36.23.1644.1027" timestamp="1635269207064" />
     <state width="748" height="265" key="GridCell.Tab.0.left/37.23.1643.1027@37.23.1643.1027" timestamp="1635184295948" />
     <state width="1381" height="267" key="GridCell.Tab.0.left/38.23.1642.1027@38.23.1642.1027" timestamp="1635102954961" />
-    <state width="1270" height="265" key="GridCell.Tab.0.right" timestamp="1635531040171">
-      <screen x="35" y="23" width="1645" height="1027" />
+    <state width="717" height="279" key="GridCell.Tab.0.left/40.23.1640.1027@40.23.1640.1027" timestamp="1635610110556" />
+    <state width="717" height="279" key="GridCell.Tab.0.right" timestamp="1635610110557">
+      <screen x="40" y="23" width="1640" height="1027" />
     </state>
-    <state width="1270" height="265" key="GridCell.Tab.0.right/35.23.1645.1027@35.23.1645.1027" timestamp="1635531040171" />
+    <state width="1270" height="265" key="GridCell.Tab.0.right/35.23.1645.1027@35.23.1645.1027" timestamp="1635546114606" />
     <state width="748" height="265" key="GridCell.Tab.0.right/36.23.1644.1027@36.23.1644.1027" timestamp="1635269207065" />
     <state width="748" height="265" key="GridCell.Tab.0.right/37.23.1643.1027@37.23.1643.1027" timestamp="1635184295949" />
     <state width="1381" height="267" key="GridCell.Tab.0.right/38.23.1642.1027@38.23.1642.1027" timestamp="1635102954961" />
-    <state x="576" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1635141102860">
-      <screen x="42" y="23" width="1638" height="1027" />
+    <state width="717" height="279" key="GridCell.Tab.0.right/40.23.1640.1027@40.23.1640.1027" timestamp="1635610110557" />
+    <state x="575" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1635608290733">
+      <screen x="40" y="23" width="1640" height="1027" />
     </state>
     <state x="573" y="349" key="com.intellij.ide.util.TipDialog/37.23.1643.1027@37.23.1643.1027" timestamp="1635100441653" />
+    <state x="575" y="349" key="com.intellij.ide.util.TipDialog/40.23.1640.1027@40.23.1640.1027" timestamp="1635608290733" />
     <state x="576" y="349" key="com.intellij.ide.util.TipDialog/42.23.1638.1027@42.23.1638.1027" timestamp="1635141102860" />
     <state x="288" y="214" key="new project wizard" timestamp="1635173313372">
       <screen x="37" y="23" width="1643" height="1027" />

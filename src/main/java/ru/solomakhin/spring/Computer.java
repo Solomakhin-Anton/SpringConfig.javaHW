@@ -21,15 +21,6 @@ public class Computer {
 
     @Override
     public String toString() {
-        System.out.println("Please select a type of music: 1 if CLASSICAL or 2 if ROCK");
-        Scanner console = new Scanner(System.in);
-        int typeNumber = console.nextInt();
-        try {
-            if (typeNumber == 1) return "Computer " + id + " " + musicPlayer.playMusic(CLASSICAL);
-            if (typeNumber == 2) return "Computer " + id + " " + musicPlayer.playMusic(ROCK);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return "Incorrect number";
+        return "Computer " + id + " " + musicPlayer.playMusic();
     }
 }

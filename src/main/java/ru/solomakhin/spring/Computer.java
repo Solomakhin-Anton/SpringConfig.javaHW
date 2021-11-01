@@ -8,7 +8,6 @@ import java.util.Scanner;
 import static ru.solomakhin.spring.MusicTypes.CLASSICAL;
 import static ru.solomakhin.spring.MusicTypes.ROCK;
 
-@Component
 public class Computer {
     private int id;
     private MusicPlayer musicPlayer;

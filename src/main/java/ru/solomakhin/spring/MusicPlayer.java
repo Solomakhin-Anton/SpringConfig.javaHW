@@ -10,7 +10,6 @@ import java.util.Random;
 import static ru.solomakhin.spring.MusicTypes.CLASSICAL;
 import static ru.solomakhin.spring.MusicTypes.ROCK;
 
-@Component
 public class MusicPlayer {
 
     @Value("${musicPlayer.name}")
@@ -30,7 +29,6 @@ public class MusicPlayer {
     private Music music1;
     private Music music2;
 
-    @Autowired
     public MusicPlayer(@Qualifier("classicalMusic") Music music1,
                        @Qualifier("rockMusic") Music music2) {
         this.music1 = music1;

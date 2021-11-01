@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97ed67d5-c8d2-47e7-a79d-1b1b81b8304e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/images/SZ2.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/solomakhin/spring/ClassicalMusic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/solomakhin/spring/ClassicalMusic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/solomakhin/spring/Computer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/solomakhin/spring/Computer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/solomakhin/spring/MusicPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/solomakhin/spring/MusicPlayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/solomakhin/spring/RapMusic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/solomakhin/spring/RapMusic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/solomakhin/spring/RockMusic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/solomakhin/spring/RockMusic.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/solomakhin/spring/SpringConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/solomakhin/spring/SpringConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/solomakhin/spring/TestSpring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/solomakhin/spring/TestSpring.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,36 +103,36 @@
       <screen x="37" y="23" width="1643" height="1027" />
     </state>
     <state x="1038" y="290" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/37.23.1643.1027@37.23.1643.1027" timestamp="1635779081743" />
-    <state width="717" height="279" key="GridCell.Tab.0.bottom" timestamp="1635779847545">
+    <state width="1138" height="279" key="GridCell.Tab.0.bottom" timestamp="1635780851743">
       <screen x="37" y="23" width="1643" height="1027" />
     </state>
     <state width="1270" height="265" key="GridCell.Tab.0.bottom/35.23.1645.1027@35.23.1645.1027" timestamp="1635546114607" />
     <state width="748" height="265" key="GridCell.Tab.0.bottom/36.23.1644.1027@36.23.1644.1027" timestamp="1635269207066" />
-    <state width="717" height="279" key="GridCell.Tab.0.bottom/37.23.1643.1027@37.23.1643.1027" timestamp="1635779847545" />
+    <state width="1138" height="279" key="GridCell.Tab.0.bottom/37.23.1643.1027@37.23.1643.1027" timestamp="1635780851743" />
     <state width="1381" height="267" key="GridCell.Tab.0.bottom/38.23.1642.1027@38.23.1642.1027" timestamp="1635102954962" />
     <state width="717" height="279" key="GridCell.Tab.0.bottom/40.23.1640.1027@40.23.1640.1027" timestamp="1635610110558" />
-    <state width="717" height="279" key="GridCell.Tab.0.center" timestamp="1635779847544">
+    <state width="1138" height="279" key="GridCell.Tab.0.center" timestamp="1635780851742">
       <screen x="37" y="23" width="1643" height="1027" />
     </state>
     <state width="1270" height="265" key="GridCell.Tab.0.center/35.23.1645.1027@35.23.1645.1027" timestamp="1635546114604" />
     <state width="748" height="265" key="GridCell.Tab.0.center/36.23.1644.1027@36.23.1644.1027" timestamp="1635269207064" />
-    <state width="717" height="279" key="GridCell.Tab.0.center/37.23.1643.1027@37.23.1643.1027" timestamp="1635779847544" />
+    <state width="1138" height="279" key="GridCell.Tab.0.center/37.23.1643.1027@37.23.1643.1027" timestamp="1635780851742" />
     <state width="1381" height="267" key="GridCell.Tab.0.center/38.23.1642.1027@38.23.1642.1027" timestamp="1635102954961" />
     <state width="717" height="279" key="GridCell.Tab.0.center/40.23.1640.1027@40.23.1640.1027" timestamp="1635610110557" />
-    <state width="717" height="279" key="GridCell.Tab.0.left" timestamp="1635779847544">
+    <state width="1138" height="279" key="GridCell.Tab.0.left" timestamp="1635780851741">
       <screen x="37" y="23" width="1643" height="1027" />
     </state>
     <state width="1270" height="265" key="GridCell.Tab.0.left/35.23.1645.1027@35.23.1645.1027" timestamp="1635546114603" />
     <state width="748" height="265" key="GridCell.Tab.0.left/36.23.1644.1027@36.23.1644.1027" timestamp="1635269207064" />
-    <state width="717" height="279" key="GridCell.Tab.0.left/37.23.1643.1027@37.23.1643.1027" timestamp="1635779847544" />
+    <state width="1138" height="279" key="GridCell.Tab.0.left/37.23.1643.1027@37.23.1643.1027" timestamp="1635780851741" />
     <state width="1381" height="267" key="GridCell.Tab.0.left/38.23.1642.1027@38.23.1642.1027" timestamp="1635102954961" />
     <state width="717" height="279" key="GridCell.Tab.0.left/40.23.1640.1027@40.23.1640.1027" timestamp="1635610110556" />
-    <state width="717" height="279" key="GridCell.Tab.0.right" timestamp="1635779847545">
+    <state width="1138" height="279" key="GridCell.Tab.0.right" timestamp="1635780851742">
       <screen x="37" y="23" width="1643" height="1027" />
     </state>
     <state width="1270" height="265" key="GridCell.Tab.0.right/35.23.1645.1027@35.23.1645.1027" timestamp="1635546114606" />
     <state width="748" height="265" key="GridCell.Tab.0.right/36.23.1644.1027@36.23.1644.1027" timestamp="1635269207065" />
-    <state width="717" height="279" key="GridCell.Tab.0.right/37.23.1643.1027@37.23.1643.1027" timestamp="1635779847545" />
+    <state width="1138" height="279" key="GridCell.Tab.0.right/37.23.1643.1027@37.23.1643.1027" timestamp="1635780851742" />
     <state width="1381" height="267" key="GridCell.Tab.0.right/38.23.1642.1027@38.23.1642.1027" timestamp="1635102954961" />
     <state width="717" height="279" key="GridCell.Tab.0.right/40.23.1640.1027@40.23.1640.1027" timestamp="1635610110557" />
     <state x="575" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1635608290733">

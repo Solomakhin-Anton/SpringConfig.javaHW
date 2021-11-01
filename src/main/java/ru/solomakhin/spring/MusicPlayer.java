@@ -5,6 +5,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
+import java.util.List;
 import java.util.Random;
 
 import static ru.solomakhin.spring.MusicTypes.CLASSICAL;
@@ -26,16 +27,14 @@ public class MusicPlayer {
         return volume;
     }
 
-    private Music music1;
-    private Music music2;
+    private List<Music> musicList;
 
-    public MusicPlayer(@Qualifier("classicalMusic") Music music1,
-                       @Qualifier("rockMusic") Music music2) {
-        this.music1 = music1;
-        this.music2 = music2;
+    public MusicPlayer(List<Music> musicList) {
+        this.musicList = musicList;
     }
 
     public String playMusic() {
-        return "Playing: " + music1.getSong() + ", " + music2.getSong();
+        Random random = new Random();
+        return "Playing: " + musicList.get(random.nextInt(musicList.size())).getSong();
     }
 }
